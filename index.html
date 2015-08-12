@@ -6,7 +6,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>NYC 311 Open Hydrant Complaints</title>
+    <title>Homeless Encampment SRs</title>
     <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href="./css/nv.d3.css" rel="stylesheet" type="text/css">
@@ -54,9 +54,9 @@
    <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<h3>
-				NYC 311 Water System Complaints  <small>July 2015</small>
-			</h3>
+			<h4>
+				NYC 311 Homeless Person Assistance & Homeless Encampment SRs  <small>Jan 1 - Aug 11, 2015</small>
+			</h4>
 		</div>
 	</div>
 </div>
@@ -64,7 +64,7 @@
       <div id="map">
       </div>
 		<div id="chart">
-		<div id = "chartTitle"># of Water System Complaints</div>
+		<div id = "chartTitle"># Homeless SRs aggregate per day</div>
       </div>
     </div>
 
@@ -72,7 +72,7 @@
     <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.13/cartodb.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
     <script src="./js/nv.d3.js"></script>
-    <script src="./js/chart.js"></script>
+    <script src="./js/chart2.js"></script>
     <script>
 
     var map = new L.Map('map', { 
@@ -84,7 +84,7 @@
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
     }).addTo(map);
 
-    var layerUrl = 'https://timothymartin76.cartodb.com/api/v2/viz/cfa9b71e-3b84-11e5-882c-0e8dde98a187/viz.json';
+    var layerUrl = 'https://timothymartin76.cartodb.com/api/v2/viz/3f34104a-4128-11e5-959f-0e43f3deba5a/viz.json';
 	
 
     cartodb.createLayer(map, layerUrl)
