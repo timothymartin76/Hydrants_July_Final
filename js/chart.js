@@ -10,7 +10,7 @@
                 area: true,
                 values: [],
                 key: "complaints",
-                color: "",
+                color: "#2185C5",
                 strokeWidth: 4,
                 classed: 'dashed'
             }]
